@@ -31,7 +31,6 @@ const ArticleList: React.FC<ArticleListProps> = (props: ArticleListProps) => {
     )
       .then((response) => response.json())
       .then((response) => {
-        console.log(response);
         setList((prevList: ArticleType[]) => [
           ...(page === 1 ? [] : prevList),
           ...response.articles,
