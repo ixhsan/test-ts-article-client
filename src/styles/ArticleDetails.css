@@ -1,0 +1,18 @@
+.detail {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #e8eff1;
+}
+
+.image {
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-self: center;
+}
+
+.link {
+    float: right;
+}
