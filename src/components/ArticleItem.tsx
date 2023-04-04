@@ -1,11 +1,19 @@
 import { Typography, Card } from "antd";
 import { Divider } from "antd";
 import Title from "antd/es/typography/Title";
+import React from "react";
 import "../styles/ArticleItem.css";
+import { ArticleType } from "../types/types";
 
 const { Paragraph } = Typography;
+interface ArticleItemProps {
+  id: number;
+  title?: string;
+  content?: string;
+  loadContent: () => void;
+}
 
-const ArticleItem = (props) => {
+const ArticleItem: React.FC<ArticleItemProps> = (props: ArticleItemProps) => {
   const article = props.content?.substring(0, 150) + "...";
 
   return (
@@ -26,7 +34,6 @@ const ArticleItem = (props) => {
           style={{ width: "100%", textAlign: "justify" }}
         >
           {article}
-          {/* <Link onClick={() => props.loadContent()}> See more</Link> */}
         </Paragraph>
       </Card>
       <Divider />
