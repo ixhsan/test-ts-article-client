@@ -14,13 +14,6 @@ or yarn if you you use yarn:
 
 ### `yarn install`
 
-## Provide your credentials
-
-In the project directory, create a new file named .env.local with the following format:
-
-### `VITE_BASE_URL = 'https://newsapi.org/v2'`
-### `VITE_API_KEY = 'd4a3aa56620b46e782c4889562ad4225'`
-
 ## Script to run
 
 run the project using this command :
